@@ -17,5 +17,9 @@ mainthread = Thread.current
 
 client.send(Jabber::Presence.new.set_status("Hello! My local time at #{Time.now}"))
 
+message = Jabber::Message.new(config['to']['jid'], "Hola amigo!")
+message.type = :chat
+client.send(message)
+
 Thread.stop
 client.close
