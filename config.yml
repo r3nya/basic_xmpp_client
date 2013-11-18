@@ -1,0 +1,6 @@
+---
+from:
+  jid: test@test/resource
+  password: 123456
+to:
+  jid: azaza@test
